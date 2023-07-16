@@ -1,0 +1,65 @@
+@use "sass:color";
+
+@function rem($px) {
+    $base:16px;
+    @return calc($px / $base) * 1rem;
+}
+
+$c1:color.adjust(red);
+$c2:color.adjust(green);
+$c3:color.adjust(blue);
+
+div {
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: rem(1px) solid $c1;
+    padding: rem(15px);
+}
+
+h1 {
+    text-decoration: underline $c3 rem(2px);
+    color: $c2;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    border: rem(1px) solid green;
+    font-size: rem(20px);
+    p {
+        padding: rem(20px);
+        font-size: rem(20px);
+        text-align: center;
+    }
+}
+
+.one, .three {
+    @extend article ;
+    color: red;
+}
+
+.two, .four {
+    @extend article ;
+    color: blue;
+}
+
+h2 {
+    text-decoration: none;
+    @extend h1 ;
+    padding: 1rem;
+    border: rem(1px) solid red;
+}
+
+.footer {
+    margin-top: rem(10px);
+    @extend article ;
+    border: rem(1px) solid blue;
+    p {font-size: rem(24px);
+    }
+    width: 174ch;
+}

@@ -1,0 +1,53 @@
+div {
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0.0625rem solid red;
+  padding: 0.9375rem;
+}
+
+h1, h2 {
+  text-decoration: underline blue 0.125rem;
+  color: green;
+}
+
+section {
+  display: flex;
+}
+
+article, .footer, .two, .four, .one, .three {
+  border: 0.0625rem solid green;
+  font-size: 1.25rem;
+}
+article p, .footer p, .two p, .four p, .one p, .three p {
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.one, .three {
+  color: red;
+}
+
+.two, .four {
+  color: blue;
+}
+
+h2 {
+  text-decoration: none;
+  padding: 1rem;
+  border: 0.0625rem solid red;
+}
+
+.footer {
+  margin-top: 0.625rem;
+  border: 0.0625rem solid blue;
+  width: 174ch;
+}
+.footer p {
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
